@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_temp_header">
+
+        <ListPreference
+            android:defaultValue="metric"
+            android:dialogTitle="@string/pref_units_summary"
+            android:entries="@array/pref_unit_keys"
+            android:entryValues="@array/pref_unit_values"
+            android:key="@string/pref_units"
+            android:summary="@string/pref_units_summary"
+            android:title="@string/pref_units_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_display_header">
+        <ListPreference
+            android:key="@string/pref_language"
+            android:dialogTitle="@string/pref_lang_title"
+            android:title="@string/pref_lang_title"
+            android:entries="@array/language_entries"
+            android:defaultValue=""
+            android:entryValues="@array/language_values"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_other_header">
+        <Preference
+            android:key="@string/pref_delete_cities"
+            android:title="@string/pref_delete_cities_title"
+            android:summary="@string/pref_delete_cities_summary"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
